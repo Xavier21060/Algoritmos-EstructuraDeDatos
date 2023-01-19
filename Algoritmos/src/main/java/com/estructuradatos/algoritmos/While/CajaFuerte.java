@@ -18,24 +18,40 @@ public class CajaFuerte {
         Scanner sc = new Scanner(System.in);
 
         /*1). Generar un numero aletorio de 4 cifras*/
-        System.out.println("El Numero aleatorio es: ");
+        System.out.println("Se empieza a generar el algoritmo del numero aleatorio ");
 
-        int [] aleatorio = new int[4]; //Que el numero aletorio es de 4 cifras.
+        int [] aleatorio = new int[4]; //Que el numero aletorio sea de 4 cifras.
 
         int numeroADigitar[] = new int[4];
+      
         int intentos = 4; //El maximo de intentos para poder adivinar el numero aleatorio
 
         String mensaje = ""; // Mensaje a mostrar si se ha adivinado la clave o no
 
+        int numeroClave;
+        System.out.println("Introduce la clave de 4 cifras para abrir la caja fuerte");
+        
+        numeroClave = sc.nextInt();
+        
         for (int i = 0; i < aleatorio.length ; i++) {
 
            aleatorio[i] = (int) (Math.random()*10); //En un arreglo se guarda el numero aletorio generado por el metodo random de la clase Math
 
-            System.out.print("Introduce un  digito: ");
-            numeroADigitar[i] = sc.nextInt();
+           
+            if(numeroClave == aleatorio[i]) {
+            	System.out.println("la caja se ha abierto satisfactoriamente");
+            }else if (numeroClave != aleatorio[i]) {
+            	System.out.println("Lo siento esa no es la combinacion");
+            	intentos--;
+            	System.out.println("Vuelva a digitar el numero: ");
+            	numeroClave = sc.nextInt();
+            }
+            
 
         }
 
+        
+        
 
         for (int i = 0; i <aleatorio.length ; i++) {
 

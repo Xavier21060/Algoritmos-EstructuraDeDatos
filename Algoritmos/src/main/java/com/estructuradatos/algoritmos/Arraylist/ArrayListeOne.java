@@ -12,7 +12,7 @@ public class ArrayListeOne {
 	
 	public static void main(String[] args) {
 		
-		@SuppressWarnings("unchecked")
+		
 		List<String> colors = new ArrayList();
 		colors.add("Yellow");
 		colors.add("Blue");
@@ -42,17 +42,7 @@ public class ArrayListeOne {
 		while(iterator.hasNext()) {
 			//colors.add("Green");
 			System.out.println("Color: " + iterator.next());
-			
-		}
-		
-		while(iterator.hasNext()) {
-			if (iterator.next().equals("Yellow")) {
-				iterator.remove();
-			}
-			
-		}
-		
-		
+		}	
 	}
-
 }
+		 
