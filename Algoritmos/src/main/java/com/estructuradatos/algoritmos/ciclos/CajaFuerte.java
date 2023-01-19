@@ -1,4 +1,4 @@
-package com.estructuradatos.algoritmos.While;
+package com.estructuradatos.algoritmos.ciclos;
 
 
 import java.util.Scanner;

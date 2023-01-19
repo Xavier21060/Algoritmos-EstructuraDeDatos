@@ -1,4 +1,4 @@
-package com.estructuradatos.algoritmos.While;
+package com.estructuradatos.algoritmos.ciclos;
 
 /**
  * Mostrar los numeros multiplos de 5 de 0 100 en for
