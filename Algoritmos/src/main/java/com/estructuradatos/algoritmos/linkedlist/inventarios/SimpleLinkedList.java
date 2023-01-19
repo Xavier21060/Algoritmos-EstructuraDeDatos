@@ -1,4 +1,4 @@
-package com.estructuradatos.algoritmos.linkedlist;
+package com.estructuradatos.algoritmos.linkedlist.inventarios;
 
 public class SimpleLinkedList {
 	
