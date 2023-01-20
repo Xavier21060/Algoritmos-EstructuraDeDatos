@@ -39,11 +39,11 @@ public class InventoryApp {
             
 			switch (option) {
 				case 1:
-						newProduct();
+					newProduct();
 					break;
 	
 				case 2:
-						addProduct();
+					addProduct();
 					break;
 				case 3:
 					 deleteProduct();
@@ -67,28 +67,47 @@ public class InventoryApp {
 
 
 	private void printProducts() {
-		// TODO Auto-generated method stub
-		
+		inventory.printProducts();
 	}
 
 
 
 	private void updateProductPrice() {
-		// TODO Auto-generated method stub
 		
+		System.out.println("ID del producto a actualizar su precio:");
+		int ID = sc.nextInt();
+		
+		System.out.println("Precio del nuevo producto: ");
+		Double price = sc.nextDouble();
+		
+		inventory.updateProductPrice(ID, price);
 	}
 
 
 
 	private void deleteProduct() {
-		// TODO Auto-generated method stub
+	
+		System.out.println("ID del producto a eliminar:");
+		int ID = sc.nextInt();
 		
+		inventory.deleteProduct(ID);
 	}
 
 
 
 	private void addProduct() {
+		System.out.println("ID del producto a añadir:");
+		int ID = sc.nextInt();
+		
+		inventory.addProduct(ID);
+		
+	}
 
+
+
+	
+	
+	private void newProduct() {
 		System.out.println("ID del producto a añadir:");
 		int ID = sc.nextInt();
 		
@@ -102,12 +121,6 @@ public class InventoryApp {
 		Double price = sc.nextDouble();
 		
 		inventory.newProduct(ID, name, existence, price);
-	}
-
-
-
-	private void newProduct() {
-		// TODO Auto-generated method stub
 		
 	}
 
