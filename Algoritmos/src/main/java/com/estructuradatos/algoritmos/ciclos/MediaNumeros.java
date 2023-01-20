@@ -18,7 +18,7 @@ public class MediaNumeros {
 		int numerosIntroducir;
 		int cantidadNumeros = 0;
 		int sumaNumeros = 0;
-		int media = 0;
+		double media = 0;
 		
 		System.out.println("Introduce un numero");
 		numerosIntroducir = sc.nextInt();
@@ -26,17 +26,19 @@ public class MediaNumeros {
 		int i = 0;
 		
 		while(numerosIntroducir > 0) {
-			i++;
+			
+			i++; //Variable de control de indice
+			
+			System.out.println(i + ". Introduce un numero: ");
+			numerosIntroducir = sc.nextInt();
 			
 			if (numerosIntroducir > 0) {
-				System.out.println(i + ". Introduce un numero: ");
-				numerosIntroducir = sc.nextInt();
 				
 				cantidadNumeros++; //Cuente todos los numero introducidos
 				System.out.println("NUmero introducido " + numerosIntroducir);
 				sumaNumeros += numerosIntroducir;
 				
-				media = sumaNumeros /cantidadNumeros;
+				media = (float) sumaNumeros /cantidadNumeros;
 				
 			}
 			
