@@ -69,6 +69,14 @@ public class MapIteraror {
             String team = iter.getValue();
         }
 
+        System.out.println("\nImplementacion de la interfaz BiConsumer");
+        players.forEach((player, team) -> {
+            System.out.println("\nPlayer: " + player + " Team: " + team);
+        });
+
+
+
+
 
     }
 
