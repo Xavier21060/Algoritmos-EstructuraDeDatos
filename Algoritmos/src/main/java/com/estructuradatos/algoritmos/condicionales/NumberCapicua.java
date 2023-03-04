@@ -23,19 +23,19 @@ public class NumberCapicua {
 	
 	public static boolean isCapicua(int n) {
 		
-		String numString = String.valueOf(n);
+		String numString = String.valueOf(n); //Se transforma el numero en un String
 		
 	
 		for(int i = 0, j = numString.length()-1; j <=i; i++, --j) {
 			
 			if (numString.charAt(i) != numString.charAt(j)) {
-				return false;
+				return true;
 			}
 			
 		}
 	
 		
-		return true;
+		return false;
 		
 	}
 	
