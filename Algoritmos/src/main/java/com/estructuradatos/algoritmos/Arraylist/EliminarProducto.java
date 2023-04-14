@@ -2,6 +2,7 @@ package com.estructuradatos.algoritmos.Arraylist;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
@@ -35,19 +36,28 @@ public class EliminarProducto {
 	
 
     public static void main(String[] args) {
-        String [] marcas = {"H&M", "Lacoste"};
-        
-        
-        //Convierta la matriz o el metodo que es una matriz  en un ArrayList
-        List<Producto> productos = new ArrayList<>(Arrays.asList(obtenerProductos()));
-       //que los recorra
-        productos.forEach(System.out::println);
-        //eliminarMarcasIterator(productos, Arrays.asList(marcas));
-        
-        eliminarMarcasStream(productos, Arrays.asList(marcas));
-        
-        System.out.println("\n\nProductos sin las marcas no deseadas: ");
-        productos.forEach(System.out::println);
+//        String [] marcas = {"H&M", "Lacoste"};
+//        
+//        
+//        //Convierta la matriz o el metodo que es una matriz  en un ArrayList
+//        List<Producto> productos = new ArrayList<>(Arrays.asList(obtenerProductos()));
+//       //que los recorra
+//        productos.forEach(System.out::println);
+//        //eliminarMarcasIterator(productos, Arrays.asList(marcas));
+//        
+//        eliminarMarcasStream(productos, Arrays.asList(marcas));
+//        
+//        System.out.println("\n\nProductos sin las marcas no deseadas: ");
+//        productos.forEach(System.out::println);
+    	
+    	Producto[] e = obtenerProductos();
+    	
+    	for (int i = 0; i < e.length; i++) {
+			
+    		System.out.println(e[i].toString());
+		}
+    	
+    	System.out.println(e.length);
     }
     
     private static void eliminarMarcasStream(List<Producto> productos, List<String> marcas){
@@ -61,6 +71,8 @@ public class EliminarProducto {
                 iterador.remove();
             }
         }
+    	
+    	
     }
 
 }
