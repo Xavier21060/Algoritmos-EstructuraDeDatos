@@ -50,6 +50,10 @@ public class Producto {
 	public void setTallas(String tallas) {
 		this.tallas = tallas;
 	}
+	@Override
+	public String toString() {
+		return "Producto [marca=" + marca + ", color=" + color + ", modelo=" + modelo + ", tallas=" + tallas + "]";
+	}
 	
 	
 	

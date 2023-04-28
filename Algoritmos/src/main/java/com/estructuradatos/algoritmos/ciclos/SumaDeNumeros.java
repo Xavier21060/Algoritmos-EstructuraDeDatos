@@ -12,7 +12,9 @@ import java.util.Scanner;
 
 
 public class SumaDeNumeros {	
-	public static void main(String[] args) {
+	
+	
+/*	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner (System.in);
 		
@@ -38,5 +40,58 @@ public class SumaDeNumeros {
 			}
 		}	
 	}
+*/
+	
+	public static void main(String[] args) {
+		
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Ingrese un numero por teclado: ");
+		int numero = sc.nextInt();
+		
+		int sumaDeNumero = 0; //para calcular la suma de los numeros
+		int numeroMayor = 0; //para obtener el numero mayor
+		
+		
+		
+		while(numero != 0 && numero >0) {
+			
+			/**
+			 * El numeroMayor tiene un valor de 0 pero despues que se introduzca
+			 * otro numero el numeroMayor toma el valor del numero introducido
+			 */
+			numeroMayor = numero; 
+			
+			sumaDeNumero += numero;
+			System.out.println("Digite otro numero: ");
+			numero = sc.nextInt();
+			
+			
+			
+			
+			
+		}
+		
+		System.out.println("La suma es: " + sumaDeNumero + ", El numero mayor es: " + numeroMayor);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }
