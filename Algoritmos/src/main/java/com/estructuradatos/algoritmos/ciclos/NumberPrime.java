@@ -15,11 +15,7 @@ public class NumberPrime {
 		int n = sc.nextInt();
 		
 		System.out.println(isPrime(n));
-		
-		
-		
-		
-		
+	
 		
 	}
 	
