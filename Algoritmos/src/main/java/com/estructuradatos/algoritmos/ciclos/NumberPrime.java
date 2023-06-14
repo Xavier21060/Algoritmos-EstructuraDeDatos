@@ -31,12 +31,16 @@ public class NumberPrime {
 			
 			if (n%i == 0) {
 				isPrime = false;
+			}else {
+				System.out.println(i + " - ");
 			}
+				
 			
 		}
 			
 		if (isPrime) {
 			 System.out.println("Es primo");
+			 System.out.println(n);
 		}else {
 			 System.out.println("No es primo");
 		}
