@@ -24,12 +24,7 @@ public class MultiplosDeTres {
 		int contadorDeMultiplosDeTres = 0;
 		int sumaDeMultiplosDeTres = 0;
 	
-		
-		
-	
-		
-		
-		
+
 		while(numero > 1) {
 			
 			int aux = numero; //100-99-98-97-96
