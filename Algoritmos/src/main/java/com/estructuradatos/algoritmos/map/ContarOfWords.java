@@ -15,12 +15,12 @@ public class ContarOfWords {
     }
 
     public static void createMap(Map<String, Integer> map) {
-
+    	 int cuenta  = 0;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Escriba una Cadena: ");
         String entrada = scanner.nextLine();
 
-        String [] tokens = entrada.split (" ");
+        String [] tokens = entrada.split("");
 
         for (String token : tokens) {
 
@@ -28,11 +28,14 @@ public class ContarOfWords {
 
             if(map.containsKey(words)) {
 
-                int cuenta = map.get(words); //Obtiene la cuenta
+                 cuenta = map.get(words); //Obtiene la cuenta
                 map.put(words, cuenta);
+           
 
+                cuenta++;
             }else {
-                map.put(words, 1);
+                map.put(words, cuenta);
+                cuenta++;
             }
 
         }

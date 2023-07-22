@@ -23,11 +23,7 @@ public class EliminarProducto {
 
 	public static Producto[] obtenerProductos() {
 
-		Producto[] productos = { new Producto("hsm", "yellow", "pay", "32"), new Producto("H&M", "Verde", "Pay", "32L"),
-				new Producto("Zara", "Gris", "Coco", "32L"), new Producto("Lacoste", "Verde", "Crown", "32L"),
-				new Producto("Farm", "Azul", "Holos", "32L"), new Producto("Ho!", "Gris", "Pay", "32L"),
-				new Producto("H&M", "Gris", "Pay", "32L"), new Producto("H&M", "Gris", "Pay", "32L"),
-				new Producto("Lacoste", "Gris", "Pay", "32L") };
+	Producto[] productos = { new Producto("hsm", "yellow", "pay", "32")};
 
 		return productos;
 	}
@@ -51,6 +47,7 @@ public class EliminarProducto {
 //        productos.forEach(System.out::println);
     	
     	Producto[] e = obtenerProductos();
+    	System.out.println(e.length);
     	
     	for (int i = 0; i < e.length; i++) {
 			
