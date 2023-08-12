@@ -32,7 +32,7 @@ public class Ejercicio38RelojArena {
 
 		if (alturaIntroducida >= 0 && alturaIntroducida % 2 == 1) {
 
-			for (int i = 0; i < (auxAltura / 2) + 1; i++) { // Esto controla la altura del rejoj
+			for (int i = 1; i <= (auxAltura / 2) + 1; i++) { // Esto controla la altura del rejoj
 
 				for (int j = 0; j < alturaIntroducida; j++) { // Va a pintar la primera linea del reloj
 
@@ -41,6 +41,10 @@ public class Ejercicio38RelojArena {
 				}
 
 				System.out.println();
+
+				if (alturaIntroducida == 1) {
+					break;
+				}
 				for (int j = 0; j <= espaciosExternos; j++) { // Este bucle pinta los espacios externos para que vaya
 																// formando la estructura del reloj
 					System.out.print(" ");
@@ -51,21 +55,24 @@ public class Ejercicio38RelojArena {
 
 			}
 
-			espaciosExternos = ((auxAltura / 2) - 2);
+			espaciosExternos = ((auxAltura / 2) - 1);
+			
 
 			for (int i = 0; i < (auxAltura / 2); i++) {
+
+				for (int j = 0; j < espaciosExternos; j++) {
+
+					System.out.print(" ");
+				}
 
 				for (int j = 0; j < altura; j++) {
 					System.out.print("*");
 				}
 
 				System.out.println();
-				for (int j = 0; j < espaciosExternos; j++) {
 
-					System.out.print(" ");
-				}
-				espaciosExternos--;
 				altura += 2;
+				espaciosExternos--;
 
 			}
 
