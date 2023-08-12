@@ -10,7 +10,11 @@ import java.util.Scanner;
  * numero imapar mayor o igual a 3
  * 
  * 
- * **** *** * *** ****
+ * 	***** 
+ *   *** 
+ *    * 
+ *   *** 
+ *  *****
  * 
  * @author Xavier Sanchez
  *
