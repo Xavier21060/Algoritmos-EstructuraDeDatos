@@ -3,11 +3,14 @@ package com.estructuradatos.algoritmos.ciclos;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.Map.Entry;
+
 import java.util.Scanner;
 
-import com.sun.org.apache.bcel.internal.generic.SALOAD;
-
+/**
+ * 
+ * @author Xavier Sanchez
+ *
+ */
 public class Ejercicio37SitemaDePalotes {
 
 	public static void main(String[] args) {
@@ -30,12 +33,8 @@ public class Ejercicio37SitemaDePalotes {
 		sistema.put(8, "||||||||");
 		sistema.put(9, "|||||||||");
 
-		Iterator<Integer> iter = sistema.keySet().iterator();
-		Iterator<Entry<Integer, String>> iter2 = sistema.entrySet().iterator();
-
 		int digitoNumero = 0;
 		int numeroAlReves = 0;
-		int cifra = 0;
 
 		while (numero != 0) {
 
@@ -44,8 +43,6 @@ public class Ejercicio37SitemaDePalotes {
 			numero /= 10;
 
 			numeroAlReves = (numeroAlReves * 10) + digitoNumero;
-
-			cifra++;
 
 			if (numero == 0) {
 
@@ -66,7 +63,6 @@ public class Ejercicio37SitemaDePalotes {
 
 	static void init(Map<Integer, String> map, int numero) {
 
-		Integer key;
 		String values = "";
 		String salto = "-";
 		Iterator<Integer> iterator = map.keySet().iterator();

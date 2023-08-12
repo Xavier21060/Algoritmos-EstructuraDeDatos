@@ -28,13 +28,13 @@ public class Ejercicio35 {
 			while (altura < alturaIntrudica / 2 + 1) {
 
 				for (i = 1; i <= espaciosPorDelante; i++) {
-					System.out.print(" ");
+					System.out.print("+");
 				}
 
 				System.out.print("*");
 
 				for (i = 1; i < espaciosinternos; i++) {
-					System.out.print(" ");
+					System.out.print("-");
 				}
 
 				System.out.print("*");
@@ -50,29 +50,29 @@ public class Ejercicio35 {
 			espaciosPorDelante = alturaIntrudica / 2;
 			altura = 1;
 
-			while (altura <= alturaIntrudica / 2 + 1) {
-
-				for (i = 1; i <= espaciosPorDelante; i++) {
-					System.out.print(" ");
-				}
-
-				System.out.print("*");
-
-				for (i = 1; i < espaciosinternos; i++) {
-					System.out.print(" ");
-				}
-
-				if (altura > 1) {
-					System.out.print("*");
-				}
-
-				System.out.println();
-
-				altura++;
-				espaciosPorDelante--;
-
-				espaciosinternos += 2;
-			}
+//			while (altura <= alturaIntrudica / 2 + 1) {
+//
+//				for (i = 1; i <= espaciosPorDelante; i++) {
+//					System.out.print(" ");
+//				}
+//
+//				System.out.print("*");
+//
+//				for (i = 1; i < espaciosinternos; i++) {
+//					System.out.print(" ");
+//				}
+//
+//				if (altura > 1) {
+//					System.out.print("*");
+//				}
+//
+//				System.out.println();
+//
+//				altura++;
+//				espaciosPorDelante--;
+//
+//				espaciosinternos += 2;
+//			}
 
 		}
 
