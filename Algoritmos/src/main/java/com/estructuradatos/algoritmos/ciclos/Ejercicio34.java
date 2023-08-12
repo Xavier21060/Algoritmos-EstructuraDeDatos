@@ -5,6 +5,13 @@ import java.util.Scanner;
 import sun.text.normalizer.CharTrie.FriendAgent;
 
 /**
+ * Escribe un programa que pida dos numeros por teclado
+ * y que luego en dos numeros diferentes los digitos pares e impares
+ * 
+ *  *Se debe comprobar los digitos de la siguiente manera
+ *  	--Primer digito del primer numero
+ *  	--Segundo digito del segundo numero
+ * 
  * 
  * @author Xavier Sánchez
  *

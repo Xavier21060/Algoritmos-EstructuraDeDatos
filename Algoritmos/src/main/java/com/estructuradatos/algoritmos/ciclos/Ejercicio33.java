@@ -37,10 +37,11 @@ public class Ejercicio33 {
 				
 				while (longitudBase > 1) {
 					
-					System.out.print(caracter);
+					System.out.print(" " + caracter);
 					longitudBase--;
 					
 				}
+				
 				
 			}
 			
