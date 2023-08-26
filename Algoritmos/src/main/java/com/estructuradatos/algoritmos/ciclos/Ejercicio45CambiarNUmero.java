@@ -103,8 +103,10 @@ public class Ejercicio45CambiarNUmero {
 
 				volteado = (volteado * 10)  + residuo;
 
+				
 				segundaParteDelNumero /= 10;
 
+				numeroResultante = volteado;
 
 			}
 			System.out.println ( " <---> " + volteado + " <---> " );
