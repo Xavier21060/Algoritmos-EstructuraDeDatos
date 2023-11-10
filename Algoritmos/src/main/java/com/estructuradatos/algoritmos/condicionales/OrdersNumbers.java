@@ -19,7 +19,7 @@ public class OrdersNumbers {
 		int c = sc.nextInt();
 		
 		int aux;
-	
+				   //1  8  5
 		orderNumbers(a, b, c);
 	
 		
