@@ -2,10 +2,8 @@ package co.com.ejercicios.leetcode;
 
 import java.util.Arrays;
 
-import javafx.util.converter.NumberStringConverter;
-
 /**
- * Given an array of integers nums and an integer target, return indices of the
+ * Given an array of integers (nums) and an integer (target), return indices of the
  * two numbers such that they add up to target.
  * 
  * You may assume that each input would have exactly one solution, and you may
@@ -47,12 +45,10 @@ public class TwoSum {
 		
 		
 
-		int resul[] = twoSum(num4, target[3]);
+		int resul[] = twoSum(num, 17);
 
-		
-		for (int i = 0; i < resul.length; i++) {
-			System.out.print(" " + resul[i] );
-		}
+		System.out.println(Arrays.toString(resul));
+	
 
 	}
 
@@ -67,13 +63,13 @@ public class TwoSum {
 		 */
 		for (int i = 0; i < nums.length; i++) {
 
-			for (int j = i+1; j < nums.length; j++) {
+			for (int j = i+1; j < nums.length; j++) { //para recorrer las demás posiciones del array
 				if (nums[i]+ nums[j] == target) {
 
 					for (int k = 0; k < output.length; k++) { // para recorrer el tamaño del arrglo resultante
 						
-						index = i;
-						i=j;
+						index = i; //obtenga el primer valor de las posiciones para que de el resultado de target
+						i=j;  // (i) que tome la posicion de (j) que es al posicion con la que suma para obtener el resultado de target
 						output[k] = index;
 					}
 

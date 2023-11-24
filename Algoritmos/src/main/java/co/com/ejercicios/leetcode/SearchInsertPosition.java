@@ -32,22 +32,25 @@ public class SearchInsertPosition {
 
 	public static int searchInsert(int[] nums, int target) {
 
-		int j = 0;
 
-		boolean isPresent = false;
+		//Para recorrer cada posicion del array
 		for (int i = 0; i < nums.length; i++) {
 
-			if (nums[i] == target || nums[i] != target && nums[i] > target) {
-
-				isPresent = true;
-
-				j = i;
+			/**
+			 * Verifica si en la posicion (i), se encuentra el target
+			 * si esa asi devuelve la posicion
+			 */
+			if (nums[i] == target || nums[i] != target && nums[i] > target) { 
 
 				return i;
 			} 
 		}
 		
 	
+		/**
+		 * En los casos que no encuentre target y sea mayor que la ultima posicion devuela una posicion más
+		 * que sería el tamaño del arreglo
+		 */
 		return nums.length;
 	}
 
@@ -57,7 +60,7 @@ public class SearchInsertPosition {
 
 		int[] nums = { 1, 3, 5, 6 };
 
-		System.out.println(searchInsert(nums, 4));
+		System.out.println(searchInsert(nums, 1));
 	}
 
 }

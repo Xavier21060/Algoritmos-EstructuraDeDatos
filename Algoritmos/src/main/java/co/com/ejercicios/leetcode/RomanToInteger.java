@@ -37,6 +37,7 @@ import java.util.Map;
 public class RomanToInteger {
 
 	private static final Map<Character, Integer> roman = new HashMap<Character, Integer>() {
+
 		{
 			put('I', 1);
 			put('V', 5);
@@ -51,14 +52,15 @@ public class RomanToInteger {
 	
 	private static int romanToInt2(String s) {
 		int sum = 0;
-		int n = s.length();
 		int value = 0;
+		int n = s.length() -1; //Para recorrer todas las posiciones de S
 		int value2 = 0;
 
-		for (int i = 0; i < s.length()-1; i++) {
+		for (int i = 0; i < n; i++) {
 			
-			value = roman.get(s.charAt(i));
-			value2 =  roman.get(s.charAt(i + 1));
+			value = roman.get(s.charAt(i)); //Obtiene el valor de la primera llave
+			value2 =  roman.get(s.charAt(i + 1)); //Obtiene el valor de la segunda llave
+			
 			if (value < value2) {
 				sum += value2 - value;	
 				i++;

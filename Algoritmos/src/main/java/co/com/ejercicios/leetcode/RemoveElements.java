@@ -1,10 +1,5 @@
 package co.com.ejercicios.leetcode;
 
-import java.util.Arrays;
-
-import com.sun.org.apache.xalan.internal.xsltc.compiler.sym;
-
-import sun.util.locale.provider.AuxLocaleProviderAdapter;
 
 /**
  * Dada una matriz de enteros (nums) y un entero (val), quitar todas las
